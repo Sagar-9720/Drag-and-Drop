@@ -5,6 +5,7 @@
 
     dragged = null;
 
+    //Below functions are responsible for drag and drop
     listener = document.addEventListener;
 
     listener("dragstart", (event) => {
@@ -28,6 +29,7 @@
             return event.target.appendChild(dragged);
         }
     });
+    //This function is responsible to resetting the page
     $(document).ready(function () {
         $(".reset").click(function () {
             // Reset the page to its initial state
